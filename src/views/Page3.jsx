@@ -5,27 +5,18 @@ import { Card } from '../components/Card';
 
 
 const Page3 = () => {
-  // return (
-  //   <>
-  //     <div>
-  //       <div>
-  //       Our a KID called BEAST comps are running every 20 minutes! Enter now to get a chance to win one of these digital collectibles at the intersect of art, culture, fashion & music.
-  //       </div>
-  //     </div>
-  //   </>
-  // )
-
-
   return (
     <>
-
-      {/* <div className='bg-black text-white h-[100vh]'> */}
       <div className='bg-black text-white h-[800px]'>
         <div className='pt-16 max-w-[900px] mx-auto'>
-          {/* <div className='flex h-[85vh]  border border-white'> */}
           <div className='flex h-[650px]'>
             <div className='w-[35%]'>
-              <img src={tribeOrdinals1} alt="" />
+              <div className='relative'>
+                <img src={tribeOrdinals1} alt="" />
+                <div className='absolute bottom-3 right-2 bg-[#ffc700] text-[10px] text-black font-bold px-3 py-1 rounded-full'>
+                  Finished
+                </div>
+              </div>
             </div>
             <div className='w-[65%]'>
               <div className='pl-8'>
@@ -67,14 +58,10 @@ const Page3 = () => {
             </div>
           </div>
         </div>
-
-
-
-
-
       </div>
     </>
   )
 }
 
-export default Page3
+
+export default Page3;
